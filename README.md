@@ -25,3 +25,9 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+ng serve
+ng serve --configuration=production
+ng generate component show-user-list
+npm install --save sweetalert2
+https://www.freakyjolly.com/angular-sweetalert2-tutorial/#Install_the_sweetalert2_Package
