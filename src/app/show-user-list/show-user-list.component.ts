@@ -24,7 +24,7 @@ export class ShowUserListComponent implements OnInit {
   }
 
   delete(id:number): void {
-    
+    this.userService.delete(id);
   }
 
 }

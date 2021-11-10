@@ -31,3 +31,5 @@ ng serve --configuration=production
 ng generate component show-user-list
 npm install --save sweetalert2
 https://www.freakyjolly.com/angular-sweetalert2-tutorial/#Install_the_sweetalert2_Package
+
+https://github.com/jordiascension/my-first-angular-app

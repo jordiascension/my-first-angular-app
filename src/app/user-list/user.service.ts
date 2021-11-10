@@ -19,7 +19,13 @@ export class UserService {
       return this._users;
     }
 
+    //TODO
+    getUserById(id:number): User {
+      return this._users[0];
+    }
+
+    //TODO
     delete(id:number): void {
-    
+      //this._users.filter(item => item !== value)
     }
   }
