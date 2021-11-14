@@ -26,6 +26,7 @@ export class UserService {
 
     //TODO
     delete(id:number): void {
-      //this._users.filter(item => item !== value)
+      const index = this._users.findIndex(u=>u.id===id);
+      if(index >= 0) this._users.splice(index,1);
     }
   }
