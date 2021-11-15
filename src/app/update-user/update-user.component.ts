@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import Swal from 'sweetalert2';
 import { User } from '../user-list/user';
+import { UserAbstractService } from '../user-list/user-abstract.service';
 import { UserService } from '../user-list/user.service';
 
 @Component({
@@ -11,7 +12,7 @@ import { UserService } from '../user-list/user.service';
 })
 export class UpdateUserComponent implements OnInit {
   
-  constructor(private userService: UserService,private route: ActivatedRoute,private route2:Router) { }
+  constructor(private userService: UserAbstractService,private route: ActivatedRoute,private route2:Router) { }
   model:User = new User(-1,'','','')
   id:number = -1;
   ngOnInit(): void {
