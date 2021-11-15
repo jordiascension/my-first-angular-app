@@ -17,7 +17,7 @@
                 <td>{{user.surname}}</td>
                 <td>{{user.dni}}</td>
                 <td>
-                    <button type="button" [routerLink]="['/crud/update/', user.id]">Update</button>
+                    <button type="button" [routerLink]="['/update-user', user.id]">Update</button>
                     <button type="button" (click)="delete(user.id)">Remove</button>
                 </td>
             </tr>

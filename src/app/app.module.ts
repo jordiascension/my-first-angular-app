@@ -10,6 +10,7 @@ import { HelloWorldJordiComponent } from './hello-world-jordi/hello-world-jordi.
 import { UserService } from './user-list/user.service';
 import { ShowUserListComponent } from './show-user-list/show-user-list.component';
 import { HomeComponent } from './home/home.component';
+import { UpdateUserComponent } from './update-user/update-user.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HomeComponent } from './home/home.component';
     HelloWorldComponent,
     HelloWorldJordiComponent,
     ShowUserListComponent,
-    HomeComponent
+    HomeComponent,
+    UpdateUserComponent
   ],
   imports: [
     BrowserModule,

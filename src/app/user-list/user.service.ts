@@ -20,13 +20,20 @@ export class UserService {
     }
 
     //TODO
-    getUserById(id:number): User {
-      return this._users[0];
+    getUserById(id: number):User {
+      const user = this._users.find(u=>u.id === id);
+      if(typeof user !== 'undefined') return user;
+      return new User(0,'','','');
     }
-
-    //TODO
+    
     delete(id:number): void {
-      const index = this._users.findIndex(u=>u.id===id);
+      const index = this._users.findIndex(u=>u.id === id);
       if(index >= 0) this._users.splice(index,1);
     }
+
+    update(user:User){
+      const index = this._users.findIndex(u=>u.id === user.id);
+      if(index >= 0) this._users.splice(index,1,user);
+    }
+
   }
